@@ -79,3 +79,21 @@ em {
   font-weight: 900;
   font-style: italic;
 }
+
+h1 {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+h2 {
+  background-color: rgb(5, 152, 47);
+  color: white;
+}
+
+.button {
+  background-color: #f98500;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
