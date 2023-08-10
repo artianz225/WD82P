@@ -1,0 +1,86 @@
+.page {
+  margin: 1em;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px;
+}
+
+.heading {
+  color: white;
+  background-color: lightgray;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.fourteen {
+  background-color: aqua;
+}
+
+.thirteen {
+  background-color: lightgoldenrodyellow
+  ;
+}
+
+.tweelve {
+  background-color: lightgreen;
+}
+
+.eleven {
+  background-color: lightcyan;
+}
+
+.ten {
+  background-color: lightblue;
+}
+
+.nine {
+  background-color: purple;
+}
+
+.eight {
+  background-color: red;
+}
+
+.seven {
+  background-color: green;
+}
+
+.nine {
+  background-color: brown;
+}
+
+.six {
+  background-color: yellow;
+}
+
+.five {
+  background-color: orange;
+}
+
+.four {
+  background-color: pink;
+}
+
+.three {
+  background-color: violet;
+}
+
+.two {
+  background-color: blue;
+}
+
+.one {
+  background-color: red;
+}
+
+.zero {
+  background-color: #ee3e86;
+}
