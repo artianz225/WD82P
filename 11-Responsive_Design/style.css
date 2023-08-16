@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: rgb(1, 12, 97);
+  height: 80px;
+}
+
+.header {
+  background-color: rgb(138, 137, 139);
+}
+
+.content {
+  background-color: aquamarine;
+}
+
+.sign-up {
+  background-color: rgb(178, 145, 209);
+}
+
+.feature-1 {
+  background-color: yellowgreen;
+}
+
+.feature-2 {
+  background-color: violet;
+}
+
+.feature-3 {
+  background-color: aliceblue;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+.sign-up,
+.feature-1,
+.feature-2,
+.feature-3 {
+  width: 50%;
+}
+
+}
+
+@media only screen and (min-width: 961px) {
+.feature-1,
+.feature-2,
+.feature-3 {
+  width: 33.3%;
+}
+.sign-up {
+  order: 1;
+  height: 200px;
+}
+
+.content {
+  order: 2;
+}
+}
