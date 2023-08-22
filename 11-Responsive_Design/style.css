@@ -5,30 +5,208 @@
 }
 
 .page {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-wrap: wrap;
+  background: linear-gradient(to right, #ffffff 0%, #f38f8f 100%)
 }
 
 .section {
   width: 100%;
-  height: 300px;
+  height: 600px;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.section-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .menu {
-  background-color: rgba(106, 106, 106, 0.8);
+  opacity: 95%;
+  width: 95%;
+  height: 100px;
+  position: fixed;
+  border-radius: 10px;
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #2c3436 0%, #e70606 100%)
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.logo-img {
   height: 60px;
 }
 
+.notif-email {
+  height: 40px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+  border-right: none;
+
+}
+
+.notif-btn {
+  font-weight: 500;
+  background-color: white;
+  color: #e70606;
+  width: 80px;
+  height: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #fde9e9;
+  cursor: pointer;
+}
+
+.section1 {
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .header {
-  background-color: rgb(138, 137, 139);
+  color: #ffffff;
+  width: 100%;
+  height: 600px;
+  background-size: 100% 600px;
+  background-repeat: no-repeat;
+  padding-left: 1em;
+  background-image: url("https://w0.peakpx.com/wallpaper/158/920/HD-wallpaper-ducati-1299-ducati-1299-superleggera-sport-bike-motorcycle-thumbnail.jpg");
+}
+
+.header-img {
+  height: 100%;
+  width: 100%;
+}
+
+.ducati {
+  text-shadow: 2px 2px 8px #030303;
+  color: #e70606;
+  font-weight: bold;
+}
+
+.second h1 {
+  color: #000000;
+  text-shadow: 2px 2px 8px #7f0404;
+  margin-top: 200px;
+  width: 95%;
+  background: rgba(255, 255, 255, 0.4);
+  align-items: center;
+  padding: .5em;
+  font-size: 45px;
+  color: #000000;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-left: 5px solid red;
+}
+
+.header-content {
+  font-size: 25px;
+  padding: 1em;
+  text-shadow: 2px 2px 8px #250000;
+}
+
+.header-btn {
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  border: 1px solid white;
+  background-color: #e70606;
+  color: #ffffff;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btn-specs {
+  width: 125px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid white;
+  background-color: #e70606;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+hr {
+  border: 2px solid red;
+  width: 100%;
+  height: 1px;
 }
 
 .content {
-  background-color: aquamarine;
+  background-color: #fff;
+}
+
+.first-content {
+  text-align: center;
+}
+
+.content-img {
+  height: 510px;
+  width: 100%;
+}
+
+.section-one-content {
+  border-top: 1px solid red;
+  border-left: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top-left-radius: ;
+  position: absolute;
+  height: 400px;
+  width: 300px;
+  right: 10px;
+  margin-top: 45px;
+  background: rgba(255, 255, 255, 0.3);
+  color: black;
+  align-items: end;
+}
+
+.section-one-footer {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+fieldset {
+height:auto;
+width:190px;
+border: 1px solid red;
+}
+
+.radio-btn-red {
+  accent-color: red;
+}
+
+.radio-btn-white {
+  accent-color: green;
+}
+
+.radio-btn-black {
+  accent-color: black;
 }
 
 .sign-up {
@@ -47,12 +225,7 @@
   background-color: aliceblue;
 }
 
-.font-logo {
-  font-size: 15px;
-  color: rgb(255, 255, 255);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 900;
-}
+
 
 
 
