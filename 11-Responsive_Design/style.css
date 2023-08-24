@@ -426,7 +426,6 @@ select {
   width: 100%;
   height: 40px;
   margin-top: 15px;
-
 }
 
 .form-row label  {
@@ -501,13 +500,13 @@ select {
 .feature-one {
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU4Y2vayTY3RYUvROUpokI7VYfrmMYvzFAmQ&usqp=CAU");
+  background-image: url("https://www.cyclenews.com/wp-content/uploads/2020/08/2020-Ducati-Superleggera-V4-Cycle-News-Review.jpg");
 }
 
 .feature-two {
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaP-7x8flrw7lKJVr3HSJczU5TaCzRMq34mg&usqp=CAU");
+  background-image: url("https://m.gpone.com/sites/default/files/styles/gallery/public/images/2022/article/gallery/05/generic/bagnaia-mugello-festabox-b1.jpg?itok=FmXwnpQQ");
 }
 
 .feature-three {
@@ -519,14 +518,14 @@ select {
 .feature-four {
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyJv6uoOh8hJgnCpyw0k3rkKWYnoZxcyLLzw&usqp=CAU");
+  background-image: url("https://motorsportsnewswire.com/wp-content/uploads/2020/02/2020-Ducati-Superleggera-V4-4.jpg");
 }
 
 .img-opacity {
   height: 100%;
   width: 100%;
   color: #fff;
-  background: rgba(9, 0, 0, 0.7);
+  background: rgba(9, 0, 0, 0.5);
   position: relative;
   display: flex;
   align-items: center;
@@ -673,7 +672,6 @@ select {
   
   .notif-btn {
     font-size: 16px;
-    font-weight: 500;
     background-color: white;
     color: #e70606;
     height: 50px;
@@ -714,7 +712,7 @@ select {
     height: 700px;
     background-size: 100% 700px;
     background-repeat: no-repeat;
-    background-image: url("images/duca-one.jpg");
+    background-image: url("images/ducati-it-header-image.jpeg");
   }
   
   .header-img {
@@ -901,6 +899,41 @@ border-radius: 15px;
   border-radius: 5px;
   width: 100%;
   height: 100%;
+}
+
+.section-sign-up {
+  height: 950px;
+  background-color: #edecec;
+  z-index: 999;
+}
+
+.register-form-it-container {
+  display: flex;
+  width: 90%;
+  height: 55%;
+  gap: 1em;
+}
+
+.register-paragraph {
+  width: 50%;
+}
+.form-for-it {
+  width: 50%;
+}
+
+.register-text-alignment {
+  text-align: justify;
+}
+
+.text-for-it {
+  width: 100%;
+  height: 50px;
+  margin: 0 0 1em 0;
+  font-size: 20px;
+  border-left: 3px solid red;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;  
 }
 
 }
