@@ -1,24 +1,129 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.header-container {
-  margin: 20px 0 0px 20px;
+.page {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  background-color: darkkhaki;
-  padding: 1em;
-  width: 50px;
-  height: 150px;
-  border-radius: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-container {
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  width: 94%;
+  display: flex;
+  justify-content: space-around;
+  padding: .5em;
+  text-align: center;
   position: fixed;
+  align-items: center;
+  border-radius: 5px;
+  margin: 3%;
+  border: 2px solid pink;
+  box-shadow: rgba(250, 0, 0, 0.30) 1.95px 1.95px 100px;
+  z-index: 999;
 }
 
-.header {
-  display: grid;
-  justify-content: space-between;
+.logo-container {
 }
 
-div {
+
+.logo-img {
+  height: 60px;
+}
+
+.ntf-container {
+  display: flex;
+}
+
+.notif-email {
+  height: 40px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+  border-right: none;
+
+}
+
+.notif-btn {
+  font-weight: 500;
+  background-color: white;
+  color: #e70606;
+  width: 80px;
+  height: 40px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+  border-left: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #fde9e9;
+  cursor: pointer;
+}
+
+.marquee-container {
+  bottom: 0;
+  right: 0;
+  width: 87%;
+  position: absolute;
+  z-index: -1;
+}
+
+hr {
+  border: 2px solid red;
+  margin: 0 1em;
+}
+
+.section {
+  height: 600px;
+  width: 100%;
+}
+
+.feature-one {
+  background-color: rgb(0, 0, 0);
+}
+
+.img-one-container {
+  height: 600px;
+  width: 375px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.feature-two {
+  background-color: blue;
+}
+
+.feature-three {
+  background-color: blueviolet;
+}
+
+.feature-four {
+  background-color: burlywood;
+}
+
+.feature-five {
+  background-color: cadetblue;
+}
+
+.sign-up {
+  background-color: lightblue;
+}
+
+.footer-container {
+  background-color: lightcoral;
 }

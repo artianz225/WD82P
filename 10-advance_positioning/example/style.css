@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.logo img {
+  width: 200px;
+}
+
 body {
   height: 1200px;
   font-size: 18px;

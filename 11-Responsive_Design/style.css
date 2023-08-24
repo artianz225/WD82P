@@ -2,19 +2,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 16px;
 }
 
-.page {
+.ipad-tablet-container {
+  display: none;
+}
+
+.desktop-container {
+  display: none;
+}
+
+.mobile-container {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(to right, #ffffff 0%, #f38f8f 100%)
+  color: #250000;
 }
 
 .section {
   width: 100%;
-  height: 600px;
-
+  height: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,16 +36,16 @@
 }
 
 .menu {
-  opacity: 95%;
   width: 95%;
-  height: 100px;
+  height: 80px;
   position: fixed;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 140px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(to right, #2c3436 0%, #e70606 100%)
+  background: linear-gradient(to right, #2c3436 0%, #e70606 100%);
+  z-index: 998;
 }
 
 .header-container {
@@ -69,9 +77,9 @@
   color: #e70606;
   width: 80px;
   height: 40px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
   border-left: none;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -79,10 +87,9 @@
   cursor: pointer;
 }
 
-.section1 {
+.section-one {
   width: 100%;
   height: 600px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -95,7 +102,7 @@
   background-size: 100% 600px;
   background-repeat: no-repeat;
   padding-left: 1em;
-  background-image: url("https://w0.peakpx.com/wallpaper/158/920/HD-wallpaper-ducati-1299-ducati-1299-superleggera-sport-bike-motorcycle-thumbnail.jpg");
+  background-image: url("images/duca-one.jpg");
 }
 
 .header-img {
@@ -118,9 +125,6 @@
   align-items: center;
   padding: .5em;
   font-size: 45px;
-  color: #000000;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
   border-left: 5px solid red;
 }
 
@@ -131,6 +135,18 @@
 }
 
 .header-btn {
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  border: 1px solid white;
+  background-color: #e70606;
+  color: #ffffff;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.signup-btn {
+  margin-top: 10px;
   width: 160px;
   height: 50px;
   font-size: 14px;
@@ -154,10 +170,15 @@
 hr {
   border: 2px solid red;
   width: 100%;
-  height: 1px;
+  margin: 0 1.5em;
 }
 
 .content {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #fff;
 }
 
@@ -165,27 +186,92 @@ hr {
   text-align: center;
 }
 
-.content-img {
+.third-content {
+  text-align: center;
+}
+
+.content-img-two {
   height: 510px;
   width: 100%;
 }
 
-.section-one-content {
+.section-two-content {
   border-top: 1px solid red;
   border-left: 1px solid red;
   border-bottom: 1px solid red;
-  border-top-left-radius: ;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: end;
   position: absolute;
-  height: 400px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   right: 10px;
-  margin-top: 45px;
-  background: rgba(255, 255, 255, 0.3);
+  margin-top: 235px;
+  background: rgba(255, 255, 255, 0.7);
   color: black;
-  align-items: end;
+  padding: 1em;
+  word-wrap: break-word;
 }
 
-.section-one-footer {
+.section-three-content {
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: start;
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  margin-top: 185px;
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+  padding: 1em;
+  z-index: 1;
+}
+
+.section-four-content {
+  border-top: 1px solid red;
+  border-left: 1px solid red;
+  border-bottom: 1px solid red;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: end;
+  position: absolute;
+  height: 190px;
+  width: 250px;
+  right: 10px;
+  margin-top: 210px;
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+  padding: 1em;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.footer-links {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.signup {
+  color: red;
+}
+
+.fa-video-camera {
+  color: red;
+}
+
+.section-two-footer {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.section-three-footer {
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -193,15 +279,18 @@ hr {
 
 fieldset {
 height:auto;
-width:190px;
+width:200px;
 border: 1px solid red;
+gap: .5em;
+padding: .5em;
+border-radius: 15px;
 }
 
 .radio-btn-red {
   accent-color: red;
 }
 
-.radio-btn-white {
+.radio-btn-green {
   accent-color: green;
 }
 
@@ -209,55 +298,605 @@ border: 1px solid red;
   accent-color: black;
 }
 
-.sign-up {
-  background-color: rgb(178, 145, 209);
+.radio-btn-white {
+  accent-color: white;
 }
 
-.feature-1 {
-  background-color: yellowgreen;
+.content-img-three {
+  height: 510px;
+  width: 100%;
+  transform: scaleX(-1);
 }
 
-.feature-2 {
-  background-color: violet;
+.section-sign-up {
+  padding-top: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #2c3436;
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #edecec;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
 }
 
-.feature-3 {
-  background-color: aliceblue;
+.section-end-footer {
+  padding-top: 15px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #2c3436;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
-
-
-
-
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-.sign-up,
-.feature-1,
-.feature-2,
-.feature-3 {
-  width: 50%;
-}
-}
-
-
-
-
-
-
-@media only screen and (min-width: 961px) {
-.feature-1,
-.feature-2,
-.feature-3 {
-  width: 33.3%;
-}
-.sign-up {
-  order: 1;
+.footer-end-img {
+  position: absolute;
   height: 200px;
+  width: 200px;
+  left: 0;
+  top: 1;
+  margin-top: -350px;
+  margin-left: 10px;
+  z-index: 1;
+  border: none;
 }
+
+.footer-end-menus {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1em;
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+  margin-top: -110px;
+}
+
+.register-paragraph {
+  padding: 0 30px 0 30px;
+  text-align: center;
+}
+
+
+
+.sign-up-text {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  height: 75px;
+  width: 300px;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-row input[type="text"] {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-bottom: 3px solid red;
+  border-left:none;
+  border-top: none;
+  border-right: none;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.form-row input[type="email"] {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-bottom: 3px solid red;
+  border-left:none;
+  border-top: none;
+  border-right: none;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.form-row input[type="option"] {
+  color: red;
+  border-radius: 2px;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+
+select {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-bottom: 3px solid red;
+  border-left:none;
+  border-top: none;
+  border-right: none;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+
+}
+
+.form-row label  {
+}
+
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid {
+  border: 1px solid red;
+  color: #d55c5f;
+  box-shadow: none;
+}
+
+.content-for-card {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #edecec;
+  color: #250000;
+}
+
+.card-container {
+  background-color: white;
+  height: 600px;
+  width: 90%;
+  padding: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-title {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: .5em;
+}
+
+.card-second-title {
+  border-left: 7px solid red;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  padding: .5em;
+
+}
+
+.card-paragraph {
+  border-right: 6px solid red;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  padding: .5em;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.card-register {
+  padding: .5em;
+  color: #7f0404;
+}
+
+.card-image {
+  border-left: 5px solid red;
+  height: 120px;
+  width: 100%;
+  padding: .5em;
+}
+
+.feature-one {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU4Y2vayTY3RYUvROUpokI7VYfrmMYvzFAmQ&usqp=CAU");
+}
+
+.feature-two {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaP-7x8flrw7lKJVr3HSJczU5TaCzRMq34mg&usqp=CAU");
+}
+
+.feature-three {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://www.fastdates.com/PitBoardFeatures/DucatiFactoryMuseum/Ducati.193Superbike1.530.jpg");
+}
+
+.feature-four {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyJv6uoOh8hJgnCpyw0k3rkKWYnoZxcyLLzw&usqp=CAU");
+}
+
+.img-opacity {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background: rgba(9, 0, 0, 0.7);
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.feature-title {
+  font-size: 14px;
+  font-weight: 100;
+  padding: .5em;
+}
+
+.feature-content {
+  font-size: 20px;
+  font-weight: 100;
+  padding: .5em;
+}
+
+.feature-btn {
+  height: 55px;
+  width: 180px;
+  margin: 2em;     
+  background-color: Transparent;
+  border: none;
+  cursor:pointer;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1179px) {
+
+.mobile-container {
+  display: none;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ipad-tablet-container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    color: #250000;
+  }
+  
+  .section-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .logo-img {
+    height: 60px;
+  }
+  
+  .menu {
+    width: 80%;
+    height: 90px;
+    position: fixed;
+    border-radius: 5px;
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to right, #2c3436 0%, #e70606 100%);
+    z-index: 998;
+  }
+  
+  .notif-email {
+    height: 50px;
+    width: 250px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+    border-right: none;
+    font-size: 16px;  
+  }
+  
+  .notif-btn {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    color: #e70606;
+    height: 50px;
+    width: 100px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    border-left: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #fde9e9;
+    cursor: pointer;
+  }
+  
+  .second h1 {
+    margin-left: 6%;
+    text-shadow: 2px 2px 8px #7f0404;
+    margin-top: 200px;
+    width: 65%;
+    background: rgba(255, 255, 255, 0.4);
+    align-items: center;
+    padding: .5em;
+    font-size: 45px;
+    border-left: 5px solid red;
+  }
+  
+.section-one {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .section {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .header {
+    color: #ffffff;
+    width: 100%;
+    height: 700px;
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+    background-image: url("images/duca-one.jpg");
+  }
+  
+  .header-img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .ducati {
+    text-shadow: 2px 2px 8px #030303;
+    color: #e70606;
+    font-weight: bold;
+  }
+  
+  .header-content {
+    margin-left: 2%;
+    font-size: 30px;
+    width: 60%;
+    word-wrap: break-word;
+    text-shadow: 2px 2px 8px #250000;
+  }
+  
+  .header-btn {
+    margin-left: 6%;
+    width: 230px;
+    height: 70px;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: #e70606;
+    color: #ffffff;
+    border-radius: 3px;
+    font-weight: bold;
+  }
 
 .content {
-  order: 2;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 1em;
+  gap: .5em;
+}
+
+.content-title {
+  width: 600px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold
+}
+
+.content-image img {
+  width: 600px;
+  height: 370px;
+}
+
+.content-discription {
+  width: 600px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: .5em;
+}
+
+.content-actions-container {
+  width: 600px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+fieldset {
+height:auto;
+width:250px;
+font-weight: bold;
+color: black;
+display: flex;
+text-align: center;
+justify-content: center;
+gap: .5em;
+border-radius: 15px;
+}
+
+.content-btn {
+}
+
+.btn-specs {
+  width: 160px;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid white;
+  background-color: #e70606;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.btn-watch {
+  color: #ffffff;
+}
+
+.content-for-card {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #edecec;
+  color: #250000;
+}
+
+.card-grid-container {
+  display: grid;
+  height: 80%;
+  width: 95%;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 15% 35% 40% 10%;
+  justify-content: center;
+  padding: 1em;
+  border-left: 8px solid red;
+  border-radius: 3px;
+
+}
+
+.card-title-it {
+  font-size: 18px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.card-second-title-it {
+  font-size: 28px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.card-paragraph-it {
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.card-register-it {
+  font-size: 18px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.card-image-it {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.img-card-it {
+  padding: .5em 1em;
+  width: 100%;
+  height: 100%;
+}
+
+}
+
+@media only screen and (min-width: 1179px) and (max-width: 3000px) {
+.mobile-container {
+  display: none;
 }
 }
+  

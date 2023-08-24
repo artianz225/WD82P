@@ -114,9 +114,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid;
 }
 
 .welcome-user-container {
+  border: 1px solid;
   display: flex;
   gap: 1em;
   align-items: center;
@@ -124,6 +126,7 @@
 
 .profile-bottom {
   font-size: 36px;
+  border: 1px solid;
 }
 
 .header-actions-container {
@@ -142,10 +145,15 @@
   border-radius: 50%;
 }
 
+.welcome-user-name {
+  border: 1px solid;
+}
+
 .user-icon-lg {
   background-color: #facc15;
   height: 60px;
   width: 60px;
+  border: 1px solid;
 
   display: flex;
   justify-content: center;
@@ -156,6 +164,7 @@
 .welcome-user-hi {
   font-size: 12px;
   font-weight: bold;
+  border: 1px solid;
 }
 
 .searchbox {
