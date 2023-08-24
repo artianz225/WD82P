@@ -902,7 +902,7 @@ border-radius: 15px;
 }
 
 .section-sign-up {
-  height: 950px;
+  height: 1100px;
   background-color: #edecec;
   z-index: 999;
 }
@@ -912,6 +912,7 @@ border-radius: 15px;
   width: 90%;
   height: 55%;
   gap: 1em;
+  margin-top: 50px;
 }
 
 .register-paragraph {
@@ -927,13 +928,13 @@ border-radius: 15px;
 
 .text-for-it {
   width: 100%;
-  height: 50px;
+  height: 35px;
+  font-size: 12px;
   margin: 0 0 1em 0;
-  font-size: 20px;
   border-left: 3px solid red;
   border-top: none;
   border-right: none;
-  border-bottom: none;  
+  border-bottom: none;
 }
 
 }
