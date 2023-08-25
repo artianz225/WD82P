@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .ipad-tablet-container {
@@ -18,14 +18,6 @@
   display: flex;
   flex-wrap: wrap;
   color: #250000;
-}
-
-.section {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .section-header {
@@ -68,7 +60,6 @@
   border-bottom: 2px solid red;
   border-left: 2px solid red;
   border-right: none;
-
 }
 
 .notif-btn {
@@ -85,6 +76,69 @@
   border-bottom-right-radius: 6px;
   background-color: #fde9e9;
   cursor: pointer;
+}
+
+.section-one {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  color: #ffffff;
+  width: 100%;
+  height: 650px;
+  background-size: 100% 650px;
+  background-repeat: no-repeat;
+  padding-left: 1em;
+  background-image: url("images/duca-one.jpg");
+}
+
+.second h1 {
+  color: #000000;
+  text-shadow: 2px 2px 8px #7f0404;
+  margin-top: 200px;
+  width: 95%;
+  background: rgba(255, 255, 255, 0.4);
+  align-items: center;
+  padding: .5em;
+  font-size: 45px;
+  border-left: 5px solid red;
+}
+
+.ducati {
+  text-shadow: 2px 2px 8px #030303;
+  color: #e70606;
+  font-weight: bold;
+}
+
+.header-content {
+  font-size: 25px;
+  padding: 1em;
+  text-shadow: 2px 2px 8px #250000;
+}
+
+.header-btn {
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  border: 1px solid white;
+  background-color: #e70606;
+  color: #ffffff;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.content {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  background-color: #fff;
 }
 
 .mb-content-container {
@@ -108,11 +162,6 @@
   align-items: center;
 }
 
-.mb-img {
-  width: 90%;
-  height: 100%;
-}
-
 .mb-content-image-scale-1 {
   width: 100%;
   height: 50%;
@@ -121,12 +170,15 @@
   justify-content: end;
 }
 
+.mb-img {
+  width: 90%;
+  height: 100%;
+}
 .mb-img-scale-1 {
   width: 90%;
   height: 100%;
   transform: scaleX(-1);
 }
-
 
 .mb-content-descriptions {
   justify-content: center;
@@ -139,7 +191,6 @@
   font-weight: 100;
   background: rgba(225, 225, 225, 0.5);
 }
-
 
 .mb-content-descriptions-scale-1 {
   align-items: center;
@@ -158,197 +209,6 @@
   width: 100%;
   height: 10%;
   justify-content: space-evenly;
-  align-items: center;
-}
-
-.section-one {
-  width: 100%;
-  height: 600px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header {
-  color: #ffffff;
-  width: 100%;
-  height: 650px;
-  background-size: 100% 650px;
-  background-repeat: no-repeat;
-  padding-left: 1em;
-  background-image: url("images/duca-one.jpg");
-}
-
-.header-img {
-  height: 100%;
-  width: 100%;
-}
-
-.ducati {
-  text-shadow: 2px 2px 8px #030303;
-  color: #e70606;
-  font-weight: bold;
-}
-
-.second h1 {
-  color: #000000;
-  text-shadow: 2px 2px 8px #7f0404;
-  margin-top: 200px;
-  width: 95%;
-  background: rgba(255, 255, 255, 0.4);
-  align-items: center;
-  padding: .5em;
-  font-size: 45px;
-  border-left: 5px solid red;
-}
-
-.header-content {
-  font-size: 25px;
-  padding: 1em;
-  text-shadow: 2px 2px 8px #250000;
-}
-
-.header-btn {
-  width: 160px;
-  height: 50px;
-  font-size: 14px;
-  border: 1px solid white;
-  background-color: #e70606;
-  color: #ffffff;
-  border-radius: 3px;
-  font-weight: bold;
-}
-
-.signup-btn {
-  margin-top: 10px;
-  width: 160px;
-  height: 50px;
-  font-size: 14px;
-  border: 1px solid white;
-  background-color: #e70606;
-  color: #ffffff;
-  border-radius: 3px;
-  font-weight: bold;
-}
-
-.btn-specs {
-  width: 125px;
-  height: 40px;
-  font-size: 14px;
-  border: 1px solid white;
-  background-color: #e70606;
-  color: #ffffff;
-  border-radius: 3px;
-}
-
-hr {
-  border: 2px solid red;
-  width: 100%;
-  margin: 0 1.5em;
-}
-
-.content {
-  width: 100%;
-  height: 650px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: black;
-  background-color: #fff;
-}
-
-.first-content {
-  text-align: center;
-}
-
-.third-content {
-  text-align: center;
-}
-
-.content-img-two {
-  height: 510px;
-  width: 100%;
-}
-
-.section-two-content {
-  border-top: 1px solid red;
-  border-left: 1px solid red;
-  border-bottom: 1px solid red;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  text-align: end;
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  right: 10px;
-  margin-top: 235px;
-  background: rgba(255, 255, 255, 0.7);
-  color: black;
-  padding: 1em;
-  word-wrap: break-word;
-}
-
-.section-three-content {
-  border-top: 1px solid red;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  text-align: start;
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  margin-top: 185px;
-  background: rgba(255, 255, 255, 0.7);
-  color: black;
-  padding: 1em;
-  z-index: 1;
-}
-
-.section-four-content {
-  border-top: 1px solid red;
-  border-left: 1px solid red;
-  border-bottom: 1px solid red;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  text-align: end;
-  position: absolute;
-  height: 190px;
-  width: 250px;
-  right: 10px;
-  margin-top: 210px;
-  background: rgba(255, 255, 255, 0.7);
-  color: black;
-  padding: 1em;
-  word-wrap: break-word;
-}
-
-a {
-  text-decoration: none;
-}
-
-a.footer-links {
-  text-decoration: none;
-  color: #fff;
-}
-
-a.signup {
-  color: red;
-}
-
-.fa-video-camera {
-  color: red;
-}
-
-.section-two-footer {
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-}
-
-.section-three-footer {
-  justify-content: space-around;
-  display: flex;
   align-items: center;
 }
 
@@ -377,106 +237,14 @@ border-radius: 15px;
   accent-color: white;
 }
 
-.content-img-three {
-  height: 510px;
-  width: 100%;
-  transform: scaleX(-1);
-}
-
-.section-sign-up {
-  padding-top: 15px;
-  font-family: 'Courier New', Courier, monospace;
-  color: black;
-  width: 100%;
-  height: 1200px;
-  display: flex;
-  justify-content: space-around;
-  background-color: #edecec;
-  flex-direction: column;
-  align-items: center;
-  z-index: 999;
-}
-
-.register-paragraph {
-  padding: 0 30px 0 30px;
-  text-align: center;
-}
-
-
-
-.sign-up-text {
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.form-row {
-  margin-bottom: 10px;
-  display: flex;
-  height: 75px;
-  width: 300px;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.form-row input[type="text"] {
-  background-color: #ffffff;
-  border-radius: 2px;
-  border-bottom: 3px solid red;
-  border-left:none;
-  border-top: none;
-  border-right: none;
-  font-size: 14px;
-  width: 100%;
+.btn-specs {
+  width: 125px;
   height: 40px;
-  margin-top: 15px;
-}
-
-.form-row input[type="email"] {
-  background-color: #ffffff;
-  border-radius: 2px;
-  border-bottom: 3px solid red;
-  border-left:none;
-  border-top: none;
-  border-right: none;
   font-size: 14px;
-  width: 100%;
-  height: 40px;
-  margin-top: 15px;
-}
-
-.form-row input[type="option"] {
-  color: red;
-  border-radius: 2px;
-  font-size: 14px;
-  width: 100%;
-  height: 40px;
-  margin-top: 15px;
-}
-
-select {
-  background-color: #ffffff;
-  border-radius: 2px;
-  border-bottom: 3px solid red;
-  border-left:none;
-  border-top: none;
-  border-right: none;
-  font-size: 14px;
-  width: 100%;
-  height: 40px;
-  margin-top: 15px;
-}
-
-.form-row label  {
-}
-
-.form-row input[type="text"]:invalid,
-.form-row input[type="email"]:invalid {
-  border: 1px solid red;
-  color: #d55c5f;
-  box-shadow: none;
+  border: 1px solid white;
+  background-color: #e70606;
+  color: #ffffff;
+  border-radius: 3px;
 }
 
 .content-for-card {
@@ -494,7 +262,6 @@ select {
   height: 600px;
   width: 90%;
   padding: 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card-title {
@@ -538,28 +305,12 @@ select {
   padding: .5em;
 }
 
-.feature-one {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-image: url("https://www.cyclenews.com/wp-content/uploads/2020/08/2020-Ducati-Superleggera-V4-Cycle-News-Review.jpg");
-}
-
-.feature-two {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-image: url("https://m.gpone.com/sites/default/files/styles/gallery/public/images/2022/article/gallery/05/generic/bagnaia-mugello-festabox-b1.jpg?itok=FmXwnpQQ");
-}
-
-.feature-three {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-image: url("https://www.fastdates.com/PitBoardFeatures/DucatiFactoryMuseum/Ducati.193Superbike1.530.jpg");
-}
-
-.feature-four {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-image: url("https://motorsportsnewswire.com/wp-content/uploads/2020/02/2020-Ducati-Superleggera-V4-4.jpg");
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .img-opacity {
@@ -588,6 +339,30 @@ select {
   flex-direction: column;
 }
 
+.feature-one {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://www.cyclenews.com/wp-content/uploads/2020/08/2020-Ducati-Superleggera-V4-Cycle-News-Review.jpg");
+}
+
+.feature-two {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://m.gpone.com/sites/default/files/styles/gallery/public/images/2022/article/gallery/05/generic/bagnaia-mugello-festabox-b1.jpg?itok=FmXwnpQQ");
+}
+
+.feature-three {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://www.fastdates.com/PitBoardFeatures/DucatiFactoryMuseum/Ducati.193Superbike1.530.jpg");
+}
+
+.feature-four {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://motorsportsnewswire.com/wp-content/uploads/2020/02/2020-Ducati-Superleggera-V4-4.jpg");
+}
+
 .feature-title {
   font-size: 14px;
   font-weight: 100;
@@ -610,6 +385,111 @@ select {
   color: white;
   border: 1px solid white;
   border-radius: 3px;
+}
+
+.section-sign-up {
+  padding-top: 15px;
+  color: black;
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #edecec;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+.register-paragraph {
+  padding: 0 30px 0 30px;
+  text-align: justify;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  height: 75px;
+  width: 300px;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sign-up-text {
+  width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form-row input[type="text"] {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-bottom: 3px solid #3a3d39;
+  border-left:none;
+  border-top: none;
+  border-right: none;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.form-row input[type="email"] {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-bottom: 3px solid #3a3d39;
+  border-left:none;
+  border-top: none;
+  border-right: none;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.form-row input[type="option"] {
+  color: red;
+  border-radius: 2px;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+
+select {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-bottom: 3px solid #3a3d39;
+  border-left:none;
+  border-top: none;
+  border-right: none;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.form-row label  {
+}
+
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid {
+  border: 1px solid red;
+  color: #d55c5f;
+  box-shadow: none;
+}
+
+.signup-btn {
+  margin-top: 10px;
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  border: 1px solid white;
+  background-color: #e70606;
+  color: #ffffff;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 .section-end-footer {
@@ -680,6 +560,29 @@ select {
 .fa-brands:hover {
   color: red;
   font-size: 26px;
+}
+
+hr {
+  border: 2px solid red;
+  width: 100%;
+  margin: 0 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.footer-links {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.signup {
+  color: red;
+}
+
+.fa-video-camera {
+  color: red;
 }
 
 
@@ -1030,10 +933,14 @@ border-radius: 15px;
 }
 
 .register-paragraph {
+  border-right: 3px solid gray;
   width: 50%;
+  height: 80%;
 }
 .form-for-it {
   width: 50%;
+  height: 80%;
+  padding: 1em;
 }
 
 .register-text-alignment {
@@ -1044,8 +951,8 @@ border-radius: 15px;
   width: 100%;
   height: 35px;
   font-size: 12px;
-  margin: 0 0 1em 0;
-  border-left: 3px solid red;
+  margin: 0 0 2.5em 0;
+  border-left: 3px solid #3a3d39;
   border-top: none;
   border-right: none;
   border-bottom: none;
@@ -1053,15 +960,18 @@ border-radius: 15px;
 
 .section-end-footer {
   width: 100%;
-  height: 300px;
+  height: 350px;
   display: flex;
   background-color: #000000;
+  justify-content: center;
 }
 
 .footer-container {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  width: 100%;
+  align-items: center;
+  text-align: center;
+  width: 75%;
   flex-direction: column;
   color: #3a3d39;
 }
@@ -1078,11 +988,12 @@ border-radius: 15px;
 }
 
 .footer-terms-use {
-  height: 20%;
+  height: 10%;
   width: 100%;
   font-size: 14px;
   font-weight: 500;
-  padding: .2em;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-terms-use-color {
@@ -1122,7 +1033,7 @@ border-radius: 15px;
 
 }
 
-@media only screen and (min-width: 1179px) and (max-width: 3000px) {
+@media only screen and (min-width: 1179px) and (max-width: 1920x) {
 
 .mobile-container {
   display: none;
