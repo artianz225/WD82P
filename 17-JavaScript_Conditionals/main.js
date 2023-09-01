@@ -47,7 +47,7 @@ if (userLoggedIn = 0) {
   console.log("Rediect to homepage");
 }
 
-let grade =parseInt( prompt ("wthat is your grade?"));
+let grade = parseInt( prompt ("wthat is your grade?"));
 console.log(grade);
 
 if (grade <= 75) {
