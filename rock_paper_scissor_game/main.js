@@ -1,7 +1,7 @@
 // Buttons
-const rockBtn = document.getElementById('rock-btn');
-const paperBtn = document.getElementById('paper-btn');
-const scissorsBtn = document.getElementById('scissors-btn');
+const rockImg = document.getElementById('rock-img');
+const paperImg = document.getElementById('paper-img');
+const scissorsImg = document.getElementById('scissors-img');
 // Scoreboard Labels
 const userScoreLabel = document.getElementById('player-score-label');
 const computerScoreLabel = document.getElementById('computer-score-label');
@@ -9,6 +9,7 @@ const tieScoreLabel = document.getElementById('tie-score-label');
 // Turns Labels
 const playerTurnLabel = document.getElementById('player-turn-label');
 const computerTurnLabel = document.getElementById('computer-turn-label');
+const drawLabel = document.getElementById('draw-turn-label');
 
 let userScore = 0;
 let computerScore = 0;
@@ -27,6 +28,7 @@ function playRound(playerWeapon, computerWeapon) {
     return 'You lose';
   }
 }
+
 
 function getComputerWeapon() {
   const weapons = ['rock', 'paper', 'scissors'];
@@ -55,6 +57,6 @@ function gameHandler(playerWeapon) {
   }
 }
 
-rockBtn.addEventListener('click', () => gameHandler(rockBtn.textContent));
-paperBtn.addEventListener('click', () => gameHandler(paperBtn.textContent));
-scissorsBtn.addEventListener('click', () => gameHandler(scissorsBtn.textContent));
+rockImg.addEventListener('click', () => gameHandler(rockImg.textContent));
+paperImg.addEventListener('click', () => gameHandler(paperImg.textContent));
+scissorsImg.addEventListener('click', () => gameHandler(scissorsImg.textContent));
