@@ -2,7 +2,7 @@
 // const myName = "ARTHUR JOHN PHILIPPS F. EPIZ";
 // console.log(myName.split('').reverse().join(''));
 let nym;
-let spc = "="
+const spc = "="
 
 nym = prompt("Enter any words that i will reverse");
 console.log(nym.toUpperCase(), (spc), (nym.toUpperCase().split('').reverse().join('')));

@@ -56,3 +56,8 @@
 .weapons-container button:hover {
   background-color: blueviolet;
 }
+
+.winLose {
+  text-align: center;
+  border: none;
+}

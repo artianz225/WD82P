@@ -3,6 +3,7 @@ const player = document.querySelector(".player img");
 const computerPoints = document.querySelector(".computerPoints");
 const playerPoints = document.querySelector(".playerPoints");
 const options = document.querySelectorAll(".options button");
+const dspwin = document.querySelector(".display")
 
 options.forEach((option) => {
   option.addEventListener("click", () => {

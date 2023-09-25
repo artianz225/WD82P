@@ -12,10 +12,10 @@ const isPalindrome = (inStr) => {
 
   for (let i=0; i<inStr.length; i+=1) {
     if (inStr[i] !== inStr[inStr.length - 1 - i]){
-       return console.log((palindrome).toUpperCase(), ("is not a alindrome"));
+       return palindrome.toUpperCase() + " is not a palindrome word";
     }
   }
-  return console.log((palindrome).toUpperCase(), ("is a palindrome"));
+  return palindrome.toUpperCase() + " is a palindrome word"
 }
 console.log((isPalindrome(palindrome)));
 

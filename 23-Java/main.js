@@ -10,16 +10,18 @@ container.style.padding = "2px";
 // container.appendChild(content);
 
 const p = document.createElement("p");
-// content.classList.add("Red");
+//content.classList.add("Red");
 p.textContent = "Hey I'm Red";
 p.style.color = "red";
 container.appendChild(p);
+console.log(p)
 
 const h3 = document.createElement("h3");
 // content.classList.add("Red");
 h3.textContent = "Hey I'm Blue";
 h3.style.color = "blue";
 container.appendChild(h3);
+console.log(h3)
 
 // const div2 = document.createElement("div");
 // const div2_container = document.getElementById("container");
@@ -35,6 +37,8 @@ div.style.border = "1px solid black" // creating style
 div.style.backgroundColor = "pink" // creating style
 div.style.textAlign = "center"
 container.appendChild(div);
+console.log(div);
+console.log(container);
 
 const h1 = document.createElement("h1");
 h1.textContent = "I'm in a div"; // creating text contents 

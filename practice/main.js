@@ -9,10 +9,12 @@ const tieScoreLabel = document.getElementById('tie-score-label');
 // Turns Labels
 const playerTurnLabel = document.getElementById('player-turn-label');
 const computerTurnLabel = document.getElementById('computer-turn-label');
+const winOrLose = document.getElementById('.winLose');
 
 let userScore = 0;
 let computerScore = 0;
 let tieScore = 0;
+let gameStatus = "";
 
 function playRound(playerWeapon, computerWeapon) {
   if (playerWeapon === computerWeapon) {
@@ -22,9 +24,9 @@ function playRound(playerWeapon, computerWeapon) {
     (playerWeapon === 'paper' && computerWeapon === 'rock') ||
     (playerWeapon === 'scissors' && computerWeapon === 'paper')
   ) {
-    return 'You win';
+    return 'You winz';
   } else {
-    return 'You lose';
+    return 'You losez';
   }
 }
 
@@ -34,6 +36,7 @@ function getComputerWeapon() {
   return weapons[randomIndex];
 }
 
+
 function gameHandler(playerWeapon) {
   const computerSelection = getComputerWeapon();
   const playerSelection = playerWeapon.toLowerCase();
@@ -41,12 +44,13 @@ function gameHandler(playerWeapon) {
   playerTurnLabel.textContent = playerSelection;
   computerTurnLabel.textContent = computerSelection;
 
-  const result = playRound(playerSelection, computerSelection);
+  const result = playRound(playerSelection, computerSelection); 
 
-  if (result === 'You win') {
+  if (result === 'You winz') {
     userScore++;
     userScoreLabel.textContent = userScore;
-  } else if (result === 'You lose') {
+    winOrLose == "W"
+  } else if (result === 'You losez') {
     computerScore++;
     computerScoreLabel.textContent = computerScore;
   } else {
@@ -54,6 +58,7 @@ function gameHandler(playerWeapon) {
     tieScoreLabel.textContent = tieScore;
   }
 }
+
 
 rockBtn.addEventListener('click', () => gameHandler(rockBtn.textContent));
 paperBtn.addEventListener('click', () => gameHandler(paperBtn.textContent));
