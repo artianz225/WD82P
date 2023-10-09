@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #383665;
+  color: #fff;
+}
+
+.container {
+}
+
+.scores-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 50%;
+  margin: 0px auto;
+  gap: .5em;
+}
+
+.scores-container h3 {
+  background-color: #ffb748;
+}
+
+.scores-container h2 {
+  background-color: #5393b6;
+}
+
+.player-score-container {
+  display: flex;
+}
+
+.psc-title {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  padding-left: 10px;
+  background-color: #ffb748;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.psc-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  background-color: #5393b6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.csc-title {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  padding-left: 10px;
+  background-color: #ffb748;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.csc-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  background-color: #5393b6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.computer-score-container {
+  display: flex;
+}
+
+.message {
+  text-align: center;
+}
+
+.message img {
+  height: 180px;
+  width: 400px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  width: 50%;
+  margin: 50px auto;
+}
+.computer img,
+.player img {
+  width: 60%;
+  height: 60%;
+}
+.shakeComputer {
+  animation: shakeComputer 0.8s linear;
+}
+.shakePlayer {
+  animation: shakePlayer 0.8s linear;
+}
+.points {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.options {
+  width: 50%;
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+.options button {
+  background-color: #7db7cd;
+  color: #000;
+  border: 1px solid #fff;
+  padding: 1em 2em;
+  border-radius: 7px;
+  width: 150px;
+  height: 50px;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all linear;
+}
+.options button:hover {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: burlywood;
+  border: 1px solid darkcyan;
+}
+@keyframes shakeComputer {
+  0% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes shakePlayer {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
